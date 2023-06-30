@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-box-bg);
+    position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backgroundBox {
+    border: 1px solid var(--background-box-border);
+    background-color: inherit;
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    bottom: var(--pad);
+    padding: var(--pad);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-link:link, .text-link:visited {
+    color: var(--text-color);
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    color: var(--text-color-hover);
+    text-decoration: none;
+}
+
+.profile-text {
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.home-content-text{
+    font-size: 24px;
+}
+
+.side-bar {
+    margin-top: 10px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: var(--pad);
+    flex-wrap: pre-wrap;
+    word-wrap: normal;
+    width: 15%
+}
+
+.contact-logo {
+    display: inline-flex;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.contact-link:link, .contact-link:visited {
+    display: flex;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.contact-link:hover {
+    color: var(--text-color-hover)
+}
+
+.info-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: var(--pad);
+    flex-wrap: pre-wrap;
+    word-wrap: normal;
+    width: 25%;
+}
+
+.info-logo {
+    display: flex;
+    width: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.info-work-title {
+    margin-left: 10px;
+}
+
+/* .info-work-point {
+    
+} */
+span {
+    display: block;
+    white-space: 'pre-wrap';
+    font-size: 24px;
+}
+
+b{
+    display: block;
+    white-space: 'pre-wrap';
+    font-size: 24px;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+:root {
+    --pad : max(20px, 4vmin);
+    --background-box-border: rgba(0, 0, 0, 0.9);
+    --background-box-bg: rgba(0, 0, 0, 0.1);
+    --text-color: rgba(0, 0, 0, 0.9);
+    --text-color-hover: rgba(0, 0, 0, 0.3);
 }
+
+/* .light {
+    --background-box-border: rgba(0, 0, 0, 0.9);
+    --background-box-bg: rgba(0, 0, 0, 0.1);
+    --text-color: rgba(0, 0, 0, 0.9);
+    --text-color-hover: rgba(0, 0, 0, 0.1);
+} */
