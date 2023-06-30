@@ -6,12 +6,12 @@ const Sidebar = () => {
     {id:'Home', link:''},
     {id:'Projects', link:'project'},
     {id:'Info', link:'info'},
-    {id: 'Contact', link:'contact'}]
+    {id:'Contact', link:'contact'}]
   return (
     <div>
       {itemList.map((item) => (
       <div>
-        <Sidebaritem key={item.id} item={item}/>
+        <Sidebaritem key={item.id} item={item} />
       </div>
       ))}
     </div>

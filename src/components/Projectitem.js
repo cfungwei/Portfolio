@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Projectitem = () => {
+const Projectitem = ({repo}) => {
   return (
-    <div>Projectitem</div>
+    <div>
+      {repo.name}
+    </div>
   )
 }
 

@@ -14,7 +14,7 @@ const Contactpage = () => {
         <Sidebar />
         <div className='content'>
           <div className='contact-content-text'>
-            <p>
+            <div>
               <div style={{ display:'block', justifyContent:'space-evenly'}}>
                 <div style={{display:'flex', alignItems:'center'}}>
                   <img src={mail} className='contact-logo' alt='mail logo'/>
@@ -29,7 +29,7 @@ const Contactpage = () => {
                   <a href='https://github.com/fungiiiii' target="_blank" rel="noopener noreferrer" className='contact-link'>Github</a>
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </div>
