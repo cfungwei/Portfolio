@@ -26,10 +26,10 @@ const Projectpage = () => {
       <div className='box backgroundBox'>
         <Profile />
         <Sidebar />
-        <div className='content'>
+        <div className='project-content'>
         { check &&
           Object.keys(repos.items).map((key, repo) =>(
-            repos.items[repo].name != 'fungiiiii' &&
+            repos.items[repo].name !== 'fungiiiii' &&
             <ProjectItem key={key} repo={repos.items[repo]} />
           ))
         }

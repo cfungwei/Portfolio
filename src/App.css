@@ -49,7 +49,7 @@ body{
     padding: var(--pad);
     flex-wrap: pre-wrap;
     word-wrap: normal;
-    width: 15%
+    width: 15%;
 }
 
 .contact-logo {
@@ -78,7 +78,9 @@ body{
     padding: var(--pad);
     flex-wrap: pre-wrap;
     word-wrap: normal;
-    width: 25%;
+    width: 30%;
+    height: 95%;
+    overflow-y: scroll;
 }
 
 .info-logo {
@@ -88,13 +90,39 @@ body{
     margin-bottom: 10px;
 }
 
-.info-work-title {
-    margin-left: 10px;
+.info-work-point {
+    font-size: 20px;
 }
 
-/* .info-work-point {
-    
+.project-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: var(--pad);
+    flex-wrap: pre-wrap;
+    word-wrap: normal;
+    height: 60%;
+    width: 40%;
+    overflow-y: scroll;
+}
+
+/* .project-group {
+
 } */
+
+.project-title {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.project-desc {
+    display: block;
+    font-size: 20px;
+    text-align: right;
+}
+
 span {
     display: block;
     font-size: 24px;
@@ -104,6 +132,10 @@ b{
     display: block;
     white-space: 'pre-wrap';
     font-size: 24px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
 .wave {
@@ -131,6 +163,7 @@ b{
     --background-box-bg: rgba(0, 0, 0, 0.1);
     --text-color: rgba(0, 0, 0, 0.9);
     --text-color-hover: rgba(0, 0, 0, 0.3);
+    --scroll-bar: rgba(0, 0, 0, 0.5);
 }
 
 /* .light {
@@ -139,3 +172,13 @@ b{
     --text-color: rgba(0, 0, 0, 0.9);
     --text-color-hover: rgba(0, 0, 0, 0.1);
 } */
+
+* {
+    font-family: 'Bebas Neue';
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/BebasNeue-Regular.ttf');
+}

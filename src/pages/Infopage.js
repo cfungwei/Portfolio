@@ -15,7 +15,7 @@ const Infopage = () => {
           <h1>Work Experience</h1>
           <div>    
             <img src={iota} className='info-logo' alt='iota logo'/>
-            <b className='info-work-title'>AI and Software Engineer</b>
+            <b>AI and Software Engineer</b>
             <ul className='info-work-point'>
               <li>
                 Collaborated with radiologists and data engineers in training an AI model with 
