@@ -1,5 +1,9 @@
-body{
-    min-height: 100%;
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.App {
     height: 100%;
     width: 100%;
     background-color: var(--background-box-bg);
@@ -44,12 +48,13 @@ body{
 
 .content {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: var(--pad);
+    right: var(--pad);
     padding: var(--pad);
     flex-wrap: pre-wrap;
     word-wrap: normal;
     width: 15%;
+    white-space: nowrap;
 }
 
 .contact-logo {
@@ -81,6 +86,7 @@ body{
     width: 30%;
     height: 95%;
     overflow-y: scroll;
+    letter-spacing: 1px;
 }
 
 .info-logo {
@@ -110,17 +116,51 @@ body{
 
 } */
 
-.project-title {
+.project-title:link, .project-title:visited {
     display: block;
     font-size: 40px;
+    color: var(--text-color);
     font-weight: bold;
     text-align: right;
+    text-decoration: none;
+}
+
+.project-title:hover {
+    color: var(--text-color-hover)
 }
 
 .project-desc {
     display: block;
     font-size: 20px;
     text-align: right;
+}
+
+.theme-button {
+    position: fixed;
+    z-index: 10;
+    left: calc(var(--pad) - 0.15em);
+    bottom: var(--pad);
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    display: flex;
+    column-gap: 15px;
+    cursor: pointer;
+}
+
+.theme-container {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.theme-box {
+    width: auto;
+    height: auto;
+}
+.theme-text {
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
 span {
@@ -136,6 +176,10 @@ b{
 
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+a:any-link {
+    cursor: pointer;
 }
 
 .wave {
@@ -159,22 +203,24 @@ b{
 
 :root {
     --pad : max(20px, 4vmin);
-    --background-box-border: rgba(0, 0, 0, 0.9);
-    --background-box-bg: rgba(0, 0, 0, 0.1);
-    --text-color: rgba(0, 0, 0, 0.9);
-    --text-color-hover: rgba(0, 0, 0, 0.3);
-    --scroll-bar: rgba(0, 0, 0, 0.5);
 }
 
-/* .light {
+.light {
     --background-box-border: rgba(0, 0, 0, 0.9);
     --background-box-bg: rgba(0, 0, 0, 0.1);
     --text-color: rgba(0, 0, 0, 0.9);
-    --text-color-hover: rgba(0, 0, 0, 0.1);
-} */
+    --text-color-hover: rgba(0, 0, 0, 0.5);
+}
 
+.dark {
+    --background-box-border: #f5f6f7;
+    --background-box-bg: #121212;
+    --text-color: #d6d1d1;
+    --text-color-hover: #999;
+}
 * {
     font-family: 'Bebas Neue';
+    color: var(--text-color)
 }
 @font-face {
     font-family: 'Bebas Neue';

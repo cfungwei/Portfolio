@@ -10,9 +10,7 @@ const Sidebar = () => {
   return (
     <div>
       {itemList.map((item) => (
-      <div>
         <Sidebaritem key={item.id} item={item} />
-      </div>
       ))}
     </div>
   )

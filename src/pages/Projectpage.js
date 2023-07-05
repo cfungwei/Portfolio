@@ -18,6 +18,7 @@ const Projectpage = () => {
   useEffect(() => {
     getRepos()
   }, [])
+   
 
   console.log(repos.items)
 
