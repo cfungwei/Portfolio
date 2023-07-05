@@ -18,7 +18,7 @@ const Contactpage = () => {
               <div style={{ display:'block', justifyContent:'space-evenly'}}>
                 <div style={{display:'flex', alignItems:'center'}}>
                   <img src={mail} className='contact-logo' alt='mail logo'/>
-                  <span>cfungwei@outlook.com</span>
+                  <div className='email'>cfungwei@outlook.com</div>
                 </div>
                 <div style={{display:'flex', alignItems:'center'}}>
                     <img src={linkedin} className='contact-logo' alt='linkedin logo'/>

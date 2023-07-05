@@ -54,8 +54,9 @@ body, html {
     padding: var(--pad);
     flex-wrap: pre-wrap;
     word-wrap: normal;
-    width: 15%;
+    width: 15% auto;
     white-space: nowrap;
+    margin: 0 auto;
 }
 
 .contact-logo {
@@ -77,6 +78,10 @@ body, html {
     color: var(--text-color-hover)
 }
 
+.email {
+    font-size: 24px
+}
+
 .info-content {
     position: absolute;
     bottom: 0;
@@ -93,12 +98,12 @@ body, html {
 .info-logo {
     display: flex;
     width: 50%;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: .5vw;
+    margin-bottom: .5vw;
 }
 
 .info-work-point {
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 .project-content {
@@ -119,7 +124,7 @@ body, html {
 
 .project-title:link, .project-title:visited {
     display: block;
-    font-size: 40px;
+    font-size: 2.1vw;
     color: var(--text-color);
     font-weight: bold;
     text-align: right;
@@ -132,7 +137,7 @@ body, html {
 
 .project-desc {
     display: block;
-    font-size: 20px;
+    font-size: 1.2vw;
     text-align: right;
 }
 
@@ -166,13 +171,13 @@ body, html {
 
 span {
     display: block;
-    font-size: 24px;
+    font-size: 1.5vw;
 }
 
 b{
     display: block;
     white-space: 'pre-wrap';
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 ::-webkit-scrollbar {

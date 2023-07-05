@@ -9,7 +9,6 @@ const Homepage = () => {
         <Profile />
         <Sidebar />
         <div className='content'>
-          <div className='home-content-text'>
             <p>
               <span>Hello <span className='wave'>👋</span></span>
               <span>Welcome to my portfolio!</span>
@@ -21,7 +20,6 @@ const Homepage = () => {
               <span>my growth and</span>
               <span>pursuit of excellence.</span>
             </p>
-          </div>
         </div>
       </div>
     </div>
