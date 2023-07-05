@@ -9,7 +9,7 @@ const Projectpage = () => {
   let [check, setCheck] = useState(false)
 
   let getRepos = async () => {
-    let response = await fetch('https://api.github.com/search/repositories?q=user:fungiiiii')
+    let response = await fetch('https://api.github.com/search/repositories?q=user:cfungwei')
     let data = await response.json()
     setRepos(data)
     setCheck(true)
