@@ -47,6 +47,7 @@ body, html {
 }
 
 .content {
+    display: flex;
     position: absolute;
     bottom: var(--pad);
     right: var(--pad);
@@ -220,7 +221,10 @@ a:any-link {
 }
 * {
     font-family: 'Bebas Neue';
-    color: var(--text-color)
+    color: var(--text-color);
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
 }
 @font-face {
     font-family: 'Bebas Neue';
