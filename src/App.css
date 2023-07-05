@@ -91,7 +91,7 @@ body, html {
     flex-wrap: pre-wrap;
     word-wrap: normal;
     width: 30%;
-    height: 95%;
+    height: 80%;
     overflow-y: scroll;
     letter-spacing: 1px;
 }
